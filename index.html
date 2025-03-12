@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles_index.css" />
+  </head>
+  <body id="wrapper" class="light-theme">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="excel.html">Excel</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form id="main-form" name="mainform">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required />
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required />
+
+        <label for="province">Province</label>
+        <input type="text" id="province" name="province" required />
+
+        <fieldset>
+          <legend>Membership</legend>
+          <label for="premium">Premium Membership</label>
+          <input
+            type="radio"
+            id="premium"
+            name="membership"
+            value="Premium"
+            checked
+          />
+
+          <label for="standard">Standard Membership</label>
+          <input
+            type="radio"
+            id="standard"
+            name="membership"
+            value="Standard"
+          />
+
+          <label for="basic">Basic Membership</label>
+          <input type="radio" id="basic" name="membership" value="Basic" />
+        </fieldset>
+
+        <button type="button" id="send-btn">Send</button>
+        <button type="reset">Cancel</button>
+      </form>
+
+      <div id="output"></div>
+
+      <div id="theme-switch">
+        <button onclick="changeColor(1)">Blue Theme</button>
+        <button onclick="changeColor(2)">Red Theme</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>Georgian @ ILAC - JavaScript Assignment 3 - Group 10</p>
+    </footer>
+
+    <script src="js/script_index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel</title>
+    <link rel="stylesheet" href="css/styles_excel.css" />
+  </head>
+  <body id="wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="excel.html">Excel</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Excel Functions</h1>
+        <label for="numbers">Enter your numbers separated by spaces:</label>
+        <input type="text" id="numbers" />
+
+        <div class="radio-buttons">
+          <input type="radio" name="excel" id="sum" />AutoSum
+          <input type="radio" name="excel" id="avg" />Average
+          <input type="radio" name="excel" id="max" />Maximum
+          <input type="radio" name="excel" id="min" />Minimum
+        </div>
+
+        <button type="button" id="calculateBtn">Calculate</button>
+        <div id="result">Result:</div>
+
+        <div id="theme-switch">
+          <button onclick="changeColor(1)">Blue Theme</button>
+          <button onclick="changeColor(2)">Red Theme</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Georgian @ ILAC - JavaScript Assignment 3 - Group 10</p>
+    </footer>
+
+    <script src="js/script_excel.js"></script>
+  </body>
+</html>
